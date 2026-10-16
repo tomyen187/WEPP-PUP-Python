@@ -11,3 +11,7 @@ The WEPP-PUP tool was implemented in the Python 3.10.2 programming language and 
    
       for single variate application : ...\WEPP_PUP_HILL\Single_variate\01_Code\main.py
       for multivariate application   : ...\WEPP_PUP_HILL\Multi_variate\01_Code\main.py
+
+
+-- Note: Make sure if any changes are made to the folder name (ex. output) that should be reflected in p0.run
+	..\06_Output\evbe_1.txt      :  provide the updated folder name
