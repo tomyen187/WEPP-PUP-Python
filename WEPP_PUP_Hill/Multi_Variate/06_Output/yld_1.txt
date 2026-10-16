@@ -1,0 +1,171 @@
+ WEPP CROP YIELD OUTPUT FILE -  YIELDS BY CROP TYPE AND OFE AT EACH HARVEST
+        ************
+ SILAGE VALUES NOT SUMMARIZED
+        ************
+
+OUTPUT FILE NAME:..\06_Output\yld_1.txt                             
+ Crop Type #  1 is Corn                                              
+
+ Yields Through the Simulation Period: 
+
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.216(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.994(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.834(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.112(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.957(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.168(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.161(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.780(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.102(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.126(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.684(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.978(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.105(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.141(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.090(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.063(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.953(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.130(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.912(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.947(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.946(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.033(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.190(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.125(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.711(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.074(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.095(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.264(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.133(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.880(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.131(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.898(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.705(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.847(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.198(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.137(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.080(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.877(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.521(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.029(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.113(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.641(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.145(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.076(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.159(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.958(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.020(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.072(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.965(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.799(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.206(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.738(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.855(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.805(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.128(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.756(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.030(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.128(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.863(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.052(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.902(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.117(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.093(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.064(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.641(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.543(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.071(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.781(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.134(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.145(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    0.580(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.058(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.154(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.129(kg/m**2)  
+   
+ Crop Type #  1 Date = 288 OFE #  1  yield=    1.163(kg/m**2)  
+   
+
+
+    CROP YIELD SUMMARY - AVERAGE YIELDS BY OFE AND CROP TYPE
+             ***********
+     SILAGE VALUES NOT SUMMARIZED
+             ***********
+
+
+FOR OFE NUMBER  1, CROP TYPE NUMBER  1
+Average Yield of  75 Harvests =    0.992 kg/m**2
+
