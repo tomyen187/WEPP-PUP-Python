@@ -8,7 +8,7 @@ from parameter_update import update_parameter_file
 def PRS_sample(optimization, ini_val, lower_bounds, upper_bounds, iteration, max_iterations,parameters,input_file,output_folder):
 
     """
-    Generate a new candidate using DDS logic.
+    Generate a new candidate using PRS logic.
     
     Parameters:
     - ini_val: List of current best parameter values.
