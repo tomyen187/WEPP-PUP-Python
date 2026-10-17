@@ -8,7 +8,7 @@ The WEPP-PUP tool was implemented in the Python 3.10.2 programming language and 
 
 	Libraries: os, NumPy (Version 2.2.6), Matplotlib (Version 3.10.8), subprocess, Pandas (Version 2.3.3), shutil, and math
 
--- Now the WEPP-PUP is set to work.
+-- Now the WEPP-PUP is set to work. Now run,
    
       for single variate application : ...\WEPP_PUP_HILL\Single_variate\01_Code\main.py
       for multivariate application   : ...\WEPP_PUP_HILL\Multi_variate\01_Code\main.py
