@@ -14,5 +14,5 @@ The WEPP-PUP tool was implemented in the Python 3.10.2 programming language and 
       for multivariate application   : ...\WEPP_PUP_HILL\Multi_variate\01_Code\main.py
 
 
--- Note: Make sure if any changes are made to the folder name (ex. output) that should be reflected in p0.run from 02_Input_Files
-	Open p0.run file and modify the lines: ..\06_Output\evbe_1.txt :  provide the updated folder name
+-- Note: Make sure if any changes are made to the folder name (ex. output) that should be reflected in p0.run from 02_Input_Files folder
+		Open p0.run file and modify the lines: ..\06_Output\evbe_1.txt :  provide the updated folder name
