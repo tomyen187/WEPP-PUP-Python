@@ -70,7 +70,11 @@ Before running the program, users should update the file paths in `main.py` to m
 
 ### Random sampling and reproducibility
 
-WEPP-PUP uses stochastic sampling in DDS and PRS parameter searches and in the weather-input perturbation procedure. The current implementation does not prescribe a fixed random seed. Consequently, independent executions may generate different parameter combinations and optimization trajectories, even when the same input data and calibration settings are used.
+Regarding random seeds, we would like to clarify that the DDS algorithm follows a stochastic search procedure, as originally described by Tolson and Shoemaker (2007). In DDS, random numbers are used to select the parameter dimensions to be perturbed and to determine the magnitude of those perturbations. The random seed serves as an initialization value for the pseudorandom-number generator rather than as a fixed parameter prescribed by the DDS algorithm.
+
+In the present WEPP-PUP implementation, DDS and PRS use Python's pseudorandom-number generator, while the weather-input perturbation routine uses random draws from both Python and NumPy. A fixed random seed was not prescribed for the representative calibration experiments. Consequently, independent executions may produce different optimization trajectories and retained parameter combinations, even when the parameter bounds, objective functions, and model inputs remain unchanged.
+
+We acknowledge that specifying a fixed seed is useful when exact repetition of an individual stochastic search is required. However, introducing a seed retrospectively would not reconstruct the random-number sequences used in the original experiments. We have therefore retained the existing initialization procedure for the present study and clarified this implementation choice in the manuscript. Users requiring repeatable runs may explicitly initialize the Python and NumPy random-number generators before executing WEPP-PUP, without modifying the underlying DDS or PRS algorithms.
 
 Users who require repeatable random sampling may explicitly initialize the Python `random` and NumPy `np.random` generators before starting the calibration. For example, `random.seed(42)` and `np.random.seed(42)` can be specified in `main.py`, with the necessary modules imported.
 
@@ -85,3 +89,9 @@ user_seed = 42  # illustrative; not claimed to have generated published figures
 random.seed(user_seed)
 np.random.seed(user_seed)
 ```
+
+
+Reference:
+Tolson, B.A. and C.A. Shoemaker, 2007. Dynamically Dimensioned Search Algorithm for Computationally Efficient Watershed Model Calibration. Water Resources Research 43: W01413, DOI: 10.1029/2005WR004723.
+
+
