@@ -1,3 +1,6 @@
+WEPP-PUP (Water Erosion Prediction Project – Parameter estimation and Uncertainty analysis Program) is a Python workflow for repeated execution and calibration of the WEPP hillslope model. The current repository contains separate **single-variate** (runoff) and **multivariate** (runoff and sediment yield) examples. The framework automates parameter updates, execution of WEPP, objective-function evaluation, and saving of iteration-level results. It includes options for weather-input perturbation and Probable Error Range (PER)-based evaluation.
+
+
 The WEPP-PUP tool was implemented in the Python 3.10.2 programming language and operates in standard desktop computing environments.  All simulations presented in this study were conducted on a Windows-based (Windows 11 OS) system using the publicly available WEPP executable (wepp_2012.exe).  The workflow requires standard WEPP input files (weather, soil, slope, and management) and a user-defined parameter configuration file. WEPP-PUP adopts the default WEPP simulation structure and utilizes the standard WEPP input files without modification. Users interested in developing or modifying WEPP input files are referred to the WEPP User Summary (NSERL Report No. 11, July 1995) (https://www.ars.usda.gov/midwest-area/west-lafayette-in/national-soil-erosion-research/docs/wepp/wepp-model-documentation/), which provides detailed guidance on the preparation and formatting of WEPP input datasets.  For typical hillslope applications, complete WEPP-PUP simulations required less than three hours of runtime for 1,000 iterations. 
 
 (The results presented are representative results for demonstration purpose)
@@ -8,7 +11,43 @@ The WEPP-PUP tool was implemented in the Python 3.10.2 programming language and 
 
 	Libraries: os, NumPy (Version 2.2.6), Matplotlib (Version 3.10.8), subprocess, Pandas (Version 2.3.3), shutil, and math
 
--- Now the WEPP-PUP is set to work. Now run,
+	Standard-library modules such as `os`, `subprocess`, `shutil`, `math`, and `random` do not require separate `pip` installation. See [requirements.txt](requirements.txt) for the declared third-party dependencies; these versions are transcribed from the existing README and **still require a clean-environment installation test** before being presented as a validated lockfile.
+
+Install the Python dependencies from the repository root:
+
+```powershell
+py -m pip install -r requirements.txt
+```
+
+
+## Existing repository structure
+
+```text
+WEPP_PUP_Hill/
+├── Single_Variate/
+│   ├── 01_Code/                # main.py, DDS/PRS, file update, objective function
+│   ├── 02_Input_Files/         # .cli, .sol, .slp, .man, .run, runoff reference series
+│   ├── 03_Parameter/           # WEPP_PUP_cal_param.txt
+│   ├── 04_WEPP/                # WEPP executables and batch files
+│   ├── 05_Working_Inputs/      # generated working copies
+│   ├── 06_Output/              # saved iteration results, WEPP outputs, diagnostic plots
+│   ├── 07_Plots/               # additional saved diagnostic plots
+│   └── 08_Post_Process/        # post-processing script and validation workbook
+└── Multi_Variate/
+    └── [same numbered directory structure, with runoff and sediment-yield files]
+```
+
+Both existing `01_Code/main.py` files are the **actual run configuration scripts**. `03_Parameter/WEPP_PUP_cal_param.txt` contains the parameter-level configuration. The WEPP `.run` and associated input files provide the WEPP model setup. No additional YAML or JSON configuration file is required by the current program. See (CONFIGURATION_GUIDE.md).
+
+## Running the demonstration
+
+1. Download or clone the repository and choose `Single_Variate` or `Multi_Variate`.
+2. Open the selected case's `01_Code/main.py` and replace its example `V:\acerlaptop\...` paths with absolute paths valid on your Windows computer. **Do not change the names of the numbered folders without also updating path references.**
+3. Check that `04_WEPP/wepp_2012.exe` is available and that the `p0.run` file references the intended input and output locations.
+4. Open `03_Parameter/WEPP_PUP_cal_param.txt` and check parameter selection, initial values, and parameter bounds.
+5. Review `max_iterations`, `optimization`, `ip_flag`, `MU_index`, `restart_flag`, and the calibration period in `01_Code/main.py`.
+
+6. Now the WEPP-PUP is set to work. Now run the main.py for execution of code.
    
       for single variate application : ...\WEPP_PUP_HILL\Single_variate\01_Code\main.py
       for multivariate application   : ...\WEPP_PUP_HILL\Multi_variate\01_Code\main.py
@@ -36,3 +75,13 @@ WEPP-PUP uses stochastic sampling in DDS and PRS parameter searches and in the w
 Users who require repeatable random sampling may explicitly initialize the Python `random` and NumPy `np.random` generators before starting the calibration. For example, `random.seed(42)` and `np.random.seed(42)` can be specified in `main.py`, with the necessary modules imported.
 
 The choice of seed does not change the mathematical formulation of DDS or PRS but determines the pseudorandom sequence generated during a run. For reproducible comparisons, users should also retain the calibration settings, input files, software revision, and resulting outputs. The outputs supplied with the repository document the representative demonstrations reported in this study.
+A user who needs repeatable random sampling may optionally insert the following **before** the WEPP-PUP run in the selected `01_Code/main.py`:
+
+```python
+import random
+import numpy as np
+
+user_seed = 42  # illustrative; not claimed to have generated published figures
+random.seed(user_seed)
+np.random.seed(user_seed)
+```
