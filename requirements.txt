@@ -1,0 +1,8 @@
+# Third-party Python dependencies declared in the pre-existing WEPP-PUP README.
+# These pins are transcribed from the repository; a clean-environment test
+# is still needed before calling this a validated reproducibility lockfile.
+# Python version documented for the manuscript: 3.10.2 on Windows 11.
+# WEPP executable is a separate requirement (wepp_2012.exe), not a pip package.
+numpy==2.2.6
+pandas==2.3.3
+matplotlib==3.10.8
