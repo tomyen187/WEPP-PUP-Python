@@ -14,5 +14,16 @@ The WEPP-PUP tool was implemented in the Python 3.10.2 programming language and 
       for multivariate application   : ...\WEPP_PUP_HILL\Multi_variate\01_Code\main.py
 
 
+### Example configurations and simulation outputs
+
+The repository contains separate examples for single-variate and multivariate WEPP calibration under the `WEPP_PUP_Hill` directory.
+
+For each application, `01_Code/main.py` contains the main simulation settings, including the optimization method, number of iterations, uncertainty options, calibration period, and input and output paths. The parameter file `03_Parameter/WEPP_PUP_cal_param.txt` specifies the parameters selected for calibration, their initial values, and their permissible ranges.
+
+The `02_Input_Files` directory contains the WEPP input datasets and reference series used in the demonstration. The corresponding simulation outputs, calibration records, and diagnostic plots are provided in `06_Output` and `07_Plots`.
+
+Before running the program, users should update the file paths in `main.py` to match their local directory structure and verify the paths referenced in the WEPP `.run` file. The examples use the WEPP 2012 executable, as described in the manuscript.
+
+
 -- Note: Make sure if any changes are made to the folder name (ex. output) that should be reflected in p0.run from 02_Input_Files folder
 		Open p0.run file and modify the lines: ..\06_Output\evbe_1.txt :  provide the updated folder name
